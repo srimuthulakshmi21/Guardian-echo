@@ -1,0 +1,29 @@
+import 'dart:async';
+
+void main() {
+  ElderlyCareApp app = ElderlyCareApp();
+  app.startApp();
+}
+
+class ElderlyCareApp {
+  void startApp() {
+    print("🔓 Logging in with phone number...");
+    Timer(Duration(seconds: 1), () {
+      showHomeScreen();
+    });
+  }
+
+  void showHomeScreen() {
+    print("\n🏠 Welcome to the Elderly Care App!");
+    print("📅 Reminder: Take your blood pressure medicine at 8 AM.");
+    print("💬 Voice Note from daughter: 'Hi Appa, don’t forget to eat. Love you! ❤️'");
+    print("🤖 AI Companion: 'Good morning! Hope you're feeling well today.'");
+    print("🛡️ Safety System: All safe, no issues detected.\n");
+    sendVoiceSimulation();
+  }
+
+  void sendVoiceSimulation() {
+    print("🔊 Playing voice notes in Tamil...");
+    print("🗣️ 'காலை வணக்கம்! நீங்கள் இப்போது உங்கள் மருந்தை எடுத்துக் கொள்ளுங்கள்.'");
+  }
+}
